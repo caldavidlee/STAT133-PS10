@@ -185,6 +185,8 @@ All earthquakes below **MMI 3.0** have been filtered out.
 - <https://quarto.org/docs/dashboards/theming.html>  
 - <https://icons.getbootstrap.com/>
 - [Shapefiles that ESRI ArcView GIS typically uses - they give you 8+ files but only read the .shp file- it will read the rest]<https://data.ca.gov/dataset/ca-geographic-boundaries>
+- <https://quarto.org/docs/dashboards/theming.html>
+- <https://bootswatch.com/>
 
 ### 
 **Dashboard Requirements**

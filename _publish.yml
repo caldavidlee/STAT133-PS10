@@ -1,0 +1,4 @@
+- source: ps10.qmd
+  quarto-pub:
+    - id: e78408fd-421e-4f00-b30e-d09b067b8bbf
+      url: https://caldavidlee.quarto.pub/stat133-ps10
