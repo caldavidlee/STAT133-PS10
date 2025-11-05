@@ -1,7 +1,12 @@
 ---
-title: "Ps 10"
-format: dashboard
+title: "Problem Set 10"
+format: 
+    dashboard:
+        orientation: columns
+        nav-buttons: [linkedin, github, twitter]
+        logo: stat133_logo-main.png
 author: David Lee
+theme: minty
 ---
 
 
@@ -34,7 +39,7 @@ The following exercises serve as an introduction to the functionality of the **s
     l1 <- st_linestring(matrix(c(0,0,1,1), ncol = 2, byrow = TRUE))
     l2 <- st_linestring(matrix(c(0,1,1,0), ncol = 2, byrow= TRUE))
     #plot(c(l1,l2))
-    plot(l1, add = TRUE)
+    plot(l1)
     plot(l2, add = TRUE)
    ```
 
@@ -47,7 +52,7 @@ The following exercises serve as an introduction to the functionality of the **s
 id <- c(1,2)
 geom <- st_sfc(list(l1,l2), crs = 'OGC:CRS84')
 my_lines <- st_sf(id= id, geom=geom)
-plot(st_geometry(my_lines), pch=16, add = TRUE)
+plot(st_geometry(my_lines), pch=16)
 
 
 ```
@@ -118,15 +123,21 @@ Add two attribute columns to `split_diamonds`:
 Be sure to save the new columns back into `split_diamonds`.
 
 ```{r}
-
+# SKIPPED
 #st_split(my_diamond, st_union(my_lines)) |>
 
-split_diamonds <- st_sf(yield = c(10,20,30,40), split_price = price * split_diamond)
+#split_diamonds <- st_sf(yield = c(10,20,30,40), split_price = price * split_diamond)
 
 ```
 
 8. Compute the **centroids** of the four split diamonds, call them `my_cents`, and add them to your plot. Set their `col` and `pch` as you like.
 ```{r}
+plot(
+  st_geometry(split_diamond),
+  col = c("pink4", "plum", "purple2", "rosybrown"),
+  border = "gray20", lwd = 1.5,
+  reset = FALSE
+)
 my_cents <- points(st_geometry(st_centroid(split_diamond)), pch = 16, col = c("seagreen1","seagreen1","seagreen1","seagreen1"))
 
 ```
@@ -145,27 +156,31 @@ Plot `my_tri_up` on top of your split diamond.
 
 ```
 
----
 
- 10.
-Repeat the previous exercise, but form an `sf` object called `my_tri_down` that has the **top-most centroid** removed.
+10. Repeat the previous exercise, but form an `sf` object called `my_tri_down` that has the **top-most centroid** removed.
+```{r}
 
----
 
-11.
-Under the definition of **“intersects,”** determine which of your split diamonds intersect with `my_tri_up`.  
+```
+
+11. Under the definition of **“intersects,”** determine which of your split diamonds intersect with `my_tri_up`.  
 Check by doing a **spatial join**.
+```{r}
 
----
 
- 12.
-Calculate the **area** of `my_tri_up` two ways:
+```
+
+
+12. Calculate the **area** of `my_tri_up` two ways:
 
 1. By directly measuring the area of the triangle.  
 2. By interpolating from the `area` attribute of the split diamonds that it intersects with.
+```{r}
 
+
+```
 Do they agree?
-
+- SKIPPED
 ---
 
  13.
@@ -175,10 +190,13 @@ Why are they different from one another?
 > When interpolating, you’ll need to decide whether your variable is **spatially extensive**.  
 > An attribute that is spatially extensive has a magnitude proportional to the size of the feature it’s measured on;  
 > as the area of the feature increases, the magnitude of the attribute increases proportionally.
+```{r}
 
+
+```
 ---
 
-# Dashboards
+# Dashboard Requirements
 
 Starting from the contents of `demo-dashboard.qmd` found in the corresponding repo  
 (<https://github.com/berkeley-stat133/demo-dashboard>), create a data dashboard that provides information on the most recent earthquakes to strike **New Zealand**.
@@ -212,6 +230,172 @@ The dashboard should include:
    > All earthquakes below **MMI 3.0** have been filtered out.
 
 Since it is quite lengthy, there is **no need to copy the code** used in your dashboard into this problem set.
+```{r}
+#install.packages(c("gt", "httr2", "shiny"))
+
+```
+```{r}
+#| label: setup
+#| message: false
+library(tidyverse)
+library(httr2)
+library(sf)
+library(leaflet)
+library(gt)
+library(shiny)
+```
+
+```{r}
+#| label: "Get quake data"
+quakes_raw <- request("https://api.geonet.org.nz/quake?MMI=3") |>
+  req_headers("Accept"="application/vnd.geo+json") |>
+  req_perform() |>
+  resp_body_string() |> 
+  st_read(quiet = TRUE)
+```
+
+```{r}
+#| label: "Prettier date/times"
+recent_quakes <- quakes_raw |> 
+  arrange(desc(time)) |> 
+  mutate(
+    time = force_tz(time, "Pacific/Auckland"),
+    pretty_time = format(time, "%I:%M %p"),
+    days_ago = today(tzone = "Pacific/Auckland") - date(time),
+    days_ago = case_when(
+      days_ago == 0 ~ "Today",
+      days_ago == 1 ~ "Yesterday",
+      TRUE ~ paste0(days_ago, " days ago")
+    )
+  )
+```
+
+```{r}
+#| label: "Summary stats"
+now_nz <- now(tzone = "Pacific/Auckland")
+last_24 <- recent_quakes |> 
+    filter(time > (now_nz - hours(24)))
+n_24 <- nrow(last_24)
+hours_last <- round(difftime(now_nz, recent_quakes$time[1], units = "hours"))
+```
+
+```{r}
+#| label: "Quake map"
+mag_pal <- colorBin("inferno", domain = 1:8, bins = c(0:5, 8))
+
+quake_map <- recent_quakes |> 
+  leaflet() |> 
+  addCircleMarkers(
+    color = ~ mag_pal(magnitude),
+    stroke = FALSE,
+    fillOpacity = 0.5,
+    radius = ~ scales::rescale(sqrt(magnitude), c(1, 10)),
+    label = ~ paste(
+      date(time), pretty_time, "<br/>",
+      "Magnitude:", round(magnitude, 1), "<br/>", 
+      "Depth:",  round(depth), " km"
+      ) |> map(html),
+    labelOptions = c(textsize = "15px")) |> 
+  addLegend(title = "Magnitude", colors = mag_pal(0:5), labels = c("<1", 1:4,">5")) |> 
+  addTiles("http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", options = tileOptions(minZoom = 5, maxZoom = 10)) 
+```
+
+```{r}
+#| label: "Quake histogram"
+mag_hist <- recent_quakes |> 
+  ggplot(aes(x = magnitude)) +
+  geom_histogram()
+```
+
+```{r}
+#| label: "Quake timeline"
+timeline <- recent_quakes |> 
+  ggplot(aes(x = time, y = 0)) +
+  geom_point()
+```
+
+```{r}
+#| label: "Recent quakes table"
+n <- 10
+top_n <- recent_quakes |> 
+  slice(1:n) |> 
+  as.data.frame() |> 
+  select(magnitude, days_ago, pretty_time, locality, depth) 
+
+top_n_table <- top_n |> 
+  gt() |> 
+  cols_label(
+    days_ago = "",
+    locality = "Location",
+    magnitude = "Magnitude",
+    depth = "Depth",
+    pretty_time = ""
+  ) |> 
+  fmt_integer(
+    columns = depth, 
+    pattern = "{x} km"
+  ) |> 
+  fmt_number(
+    columns = magnitude,
+    decimals = 1
+  ) |> 
+  data_color(
+    columns = "magnitude",
+    fn = mag_pal
+  ) |>
+  tab_header(
+    title = md("**Last 10 Earthquakes**")
+  ) |> 
+  tab_source_note(
+    source_note = md(paste("Retrieved from the [GeoNet API](https://api.geonet.org.nz/) at", format(now_nz, "%Y/%m/%d %H:%M %Z")))
+  )
+```
+
+# Dashboard
+
+## Column 1 {height = 50%}
+
+####
+```{r}
+#| component: valuebox
+#| title: Number of Hours since last Earthquake
+#| echo: false
+list(icon = "clock-history", color = "primary")
+
+```
+
+```{r}
+#| component: valuebox
+#| title: Number of Earthquakes in the last 24 hours
+list( icon = "activity", color = "primary")
+```
+
+## Column 2 {height = 50%}
+```{r}
+quake_map
+```
+
+3. **A layout in two columns.**
+4. The **map of New Zealand** taking up the full right column.
+5. The **left column** should have two rows:
+   - The **top row** has **value boxes** for:
+     - the **number of hours since the last earthquake**, and  
+     - the **number of earthquakes in the last 24 hours**.  
+       Select a suitable **icon** for each.
+       > Quarto dashboards can use any of the icons in the Bootstrap collection.  
+       > Search for an icon and use the corresponding name as a string:  
+       > <https://icons.getbootstrap.com/>.
+   - The **bottom row** should hold the **table of the top n earthquakes**.
+6. All of the above should appear on a page called **“Dashboard.”**  
+   Add a second page called **“About the data”** that displays the following text:
+
+   > The original author of this dashboard is **Charlotte Wickham**.  
+   >  
+   > The data on earthquakes is drawn from the **GeoNet API**:  
+   > <https://api.geonet.org.nz/>  
+   >  
+   > All earthquakes below **MMI 3.0** have been filtered out.
+
 
 ---
 
