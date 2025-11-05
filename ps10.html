@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
         <div class="navbar-author">David Lee</div>
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-ps-10-gerrymandering" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#ps-10-gerrymandering" data-scrolling="false" href="#ps-10-gerrymandering" aria-controls="ps-10-gerrymandering" aria-selected="true"><span class="nav-link-text">PS 10 — Gerrymandering</span></a></li><li class="nav-item" role="presentation"><a id="tab-dashboard-requirements" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#dashboard-requirements" data-scrolling="false" href="#dashboard-requirements" aria-controls="dashboard-requirements" aria-selected="false"><span class="nav-link-text">Dashboard Requirements</span></a></li><li class="nav-item" role="presentation"><a id="tab-dashboard" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#dashboard" data-scrolling="false" href="#dashboard" aria-controls="dashboard" aria-selected="false"><span class="nav-link-text">Dashboard</span></a></li><li class="nav-item" role="presentation"><a id="tab-references" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#references" data-scrolling="false" href="#references" aria-controls="references" aria-selected="false"><span class="nav-link-text">References</span></a></li></ul><div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|&amp;title=Problem%20Set%2010" title="LinkedIn"><i class="bi bi-linkedin"></i></a><a class="quarto-dashboard-link" href="https://github.com/caldavidlee/STAT133-PS10/" title="GitHub"><i class="bi bi-github"></i></a><a class="quarto-dashboard-link" href="https://twitter.com/intent/tweet?url=|url|&amp;text=Problem%20Set%2010" title="Twitter"><i class="bi bi-twitter"></i></a></div></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-ps-10-gerrymandering" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#ps-10-gerrymandering" data-scrolling="false" href="#ps-10-gerrymandering" aria-controls="ps-10-gerrymandering" aria-selected="true"><span class="nav-link-text">PS 10 — Gerrymandering</span></a></li><li class="nav-item" role="presentation"><a id="tab-dashboard" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#dashboard" data-scrolling="false" href="#dashboard" aria-controls="dashboard" aria-selected="false"><span class="nav-link-text">Dashboard</span></a></li><li class="nav-item" role="presentation"><a id="tab-about-the-data" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#about-the-data" data-scrolling="false" href="#about-the-data" aria-controls="about-the-data" aria-selected="false"><span class="nav-link-text">About the Data</span></a></li></ul><div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="https://github.com/caldavidlee/STAT133-PS10"><i class="bi bi-github"></i></a><a class="quarto-dashboard-link" href="https://www.linkedin.com/in/davidthelee/"><i class="bi bi-linkedin"></i></a><a class="quarto-dashboard-link" href="http://x.com/divarnold/"><i class="bi bi-twitter"></i></a></div></div></div>
 </nav>
 </header>
 <div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill quarto-dashboard-pages">  
@@ -322,11 +322,651 @@ as the area of the feature increases, the magnitude of the attribute increases p
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 </div>
-</div><div id="dashboard-requirements" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-dashboard-requirements">
+</div><div id="dashboard" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-dashboard">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box bg-primary showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="clock-history" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-clock-history"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Number of Hours since last Earthquake
+</p>
+<p class="value-box-value">
+49
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box bg-primary showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="activity" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-activity"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Number of Earthquakes in the last 24 hours
+</p>
+<p class="value-box-value">
+0
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-title="Top 10 Earthquakes" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Top 10 Earthquakes
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div id="alvmbwvufs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;" class="html-fill-item html-fill-container">
+<style>#alvmbwvufs table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#alvmbwvufs thead, #alvmbwvufs tbody, #alvmbwvufs tfoot, #alvmbwvufs tr, #alvmbwvufs td, #alvmbwvufs th {
+  border-style: none;
+}
+
+#alvmbwvufs p {
+  margin: 0;
+  padding: 0;
+}
+
+#alvmbwvufs .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#alvmbwvufs .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#alvmbwvufs .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#alvmbwvufs .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#alvmbwvufs .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#alvmbwvufs .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#alvmbwvufs .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#alvmbwvufs .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#alvmbwvufs .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#alvmbwvufs .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#alvmbwvufs .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#alvmbwvufs .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#alvmbwvufs .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#alvmbwvufs .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#alvmbwvufs .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#alvmbwvufs .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#alvmbwvufs .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#alvmbwvufs .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#alvmbwvufs .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#alvmbwvufs .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#alvmbwvufs .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#alvmbwvufs .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#alvmbwvufs .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#alvmbwvufs .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#alvmbwvufs .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#alvmbwvufs .gt_left {
+  text-align: left;
+}
+
+#alvmbwvufs .gt_center {
+  text-align: center;
+}
+
+#alvmbwvufs .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#alvmbwvufs .gt_font_normal {
+  font-weight: normal;
+}
+
+#alvmbwvufs .gt_font_bold {
+  font-weight: bold;
+}
+
+#alvmbwvufs .gt_font_italic {
+  font-style: italic;
+}
+
+#alvmbwvufs .gt_super {
+  font-size: 65%;
+}
+
+#alvmbwvufs .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#alvmbwvufs .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#alvmbwvufs .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#alvmbwvufs .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#alvmbwvufs .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#alvmbwvufs .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#alvmbwvufs .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#alvmbwvufs .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#alvmbwvufs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<th colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border"><strong>Last 10 Earthquakes</strong></th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="magnitude" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Magnitude</th>
+<th id="days_ago" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="pretty_time" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="locality" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Location</th>
+<th id="depth" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Depth</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">2.7</td>
+<td class="gt_row gt_left" headers="days_ago">2 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">03:58 PM</td>
+<td class="gt_row gt_left" headers="locality">20 km north-west of Porirua</td>
+<td class="gt_row gt_right" headers="depth">25 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #420A68; color: #FFFFFF">2.0</td>
+<td class="gt_row gt_left" headers="days_ago">2 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">03:11 PM</td>
+<td class="gt_row gt_left" headers="locality">Within 5 km of Taupo</td>
+<td class="gt_row gt_right" headers="depth">5 km</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #DD513A; color: #FFFFFF">3.4</td>
+<td class="gt_row gt_left" headers="days_ago">3 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">09:44 PM</td>
+<td class="gt_row gt_left" headers="locality">5 km north of Hunterville</td>
+<td class="gt_row gt_right" headers="depth">33 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #FCA50A; color: #000000">4.8</td>
+<td class="gt_row gt_left" headers="days_ago">5 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">05:47 PM</td>
+<td class="gt_row gt_left" headers="locality">45 km north-east of Arthur's Pass</td>
+<td class="gt_row gt_right" headers="depth">5 km</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">3.0</td>
+<td class="gt_row gt_left" headers="days_ago">5 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">05:08 PM</td>
+<td class="gt_row gt_left" headers="locality">10 km east of Murupara</td>
+<td class="gt_row gt_right" headers="depth">5 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #DD513A; color: #FFFFFF">3.3</td>
+<td class="gt_row gt_left" headers="days_ago">5 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">12:31 AM</td>
+<td class="gt_row gt_left" headers="locality">20 km east of Rotorua</td>
+<td class="gt_row gt_right" headers="depth">5 km</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #DD513A; color: #FFFFFF">3.3</td>
+<td class="gt_row gt_left" headers="days_ago">6 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">10:05 PM</td>
+<td class="gt_row gt_left" headers="locality">30 km west of Matawai</td>
+<td class="gt_row gt_right" headers="depth">31 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #DD513A; color: #FFFFFF">3.6</td>
+<td class="gt_row gt_left" headers="days_ago">6 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">01:56 AM</td>
+<td class="gt_row gt_left" headers="locality">30 km north-west of Wairoa</td>
+<td class="gt_row gt_right" headers="depth">5 km</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">2.4</td>
+<td class="gt_row gt_left" headers="days_ago">7 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">09:38 AM</td>
+<td class="gt_row gt_left" headers="locality">5 km north-east of Porangahau</td>
+<td class="gt_row gt_right" headers="depth">12 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #DD513A; color: #FFFFFF">3.1</td>
+<td class="gt_row gt_left" headers="days_ago">7 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">06:04 AM</td>
+<td class="gt_row gt_left" headers="locality">30 km north-west of Ohakune</td>
+<td class="gt_row gt_right" headers="depth">16 km</td>
+</tr>
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
+<td colspan="5" class="gt_sourcenote">Retrieved from the <a href="https://api.geonet.org.nz/">GeoNet API</a> at 2025/11/05 17:22 NZDT</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="leaflet html-widget html-fill-item html-fill-container" id="htmlwidget-da115f1774b7475573f7" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-da115f1774b7475573f7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addCircleMarkers","args":[[-40.984291077,-38.664100647,-39.874763489,-42.614830017,-38.484447479,-38.132694244,-38.392230988,-38.790550122,-40.238220215,-39.220573425,-40.243846893,-47.035568237,-42.879142761,-40.280292511,-40.256393433,-38.406497955,-40.403179169,-42.264122009,-40.997220944,-37.676879883,-38.927822113,-40.31823349,-39.574073792,-39.570644379,-43.889202118,-43.891521454,-43.892364502,-43.894645691,-44.815513611,-37.922542572,-39.406799316,-40.860199755,-37.874675751,-40.291099548,-40.27558136,-40.975498199,-38.44040047,-37.591854095,-39.670654297,-40.255474091,-40.657653809,-37.832349476,-37.584983826,-37.589309692,-37.593414307,-39.524246216,-37.839469663,-40.079269409,-43.588031769,-39.576496124,-38.615402222,-40.264347076,-40.567897797,-40.540232886,-40.511611938,-39.408439636,-39.332569122,-38.922897339,-38.648349762,-38.175041199,-40.960731506,-40.810321808,-39.918827057,-39.602649689,-37.626426697,-41.121986389,-39.308944702,-39.50919342,-39.903377533,-37.892249573,-40.301872253,-37.586769104,-37.730002431,-40.678420605,-37.717437744,-39.613330841,-40.29309845,-40.283168793,-38.656257629,-37.701237395,-37.623733965,-40.285617828,-40.283039093,-44.404281616,-41.327770233,-40.570831299,-40.57062149,-40.573154449,-40.575458527,-40.594295502,-38.562152863,-38.665939331,-41.332603455,-41.329185486,-40.11089385,-37.562977112,-43.598506927,-39.336303711,-40.29977417,-37.725988928],[174.696411133,176.105041504,175.541122437,171.954101562,176.848815918,176.47114563,177.142486572,177.20602069,176.694396973,175.184158325,176.702529907,165.125152588,171.598892212,176.654312134,176.665786743,176.803466797,176.075149536,173.641281128,173.972110372,177.34526062,177.206008911,176.525085449,176.901351929,176.922607422,169.088592529,169.092315674,169.088500977,169.081039429,167.55140686,178.400192261,173.652099609,175.419095026,178.382629395,176.715957642,176.693359375,175.57989502,176.594162001,175.634887695,176.796569824,176.693725586,175.2059021,178.333055648,175.63760376,175.631881714,175.640426636,177.027984619,177.891725523,174.974197388,172.647140503,176.911315918,176.916854858,176.418716431,176.458007812,176.17000394,175.04510498,177.045196533,174.683197021,177.196151733,176.086761475,178.137893677,175.066101074,173.577331543,176.487304688,176.695602417,178.310836792,175.15562439,176.969955444,176.994995117,176.514511108,177.285176658,176.711746216,175.691848755,178.333153214,175.63704539,178.50769043,176.930450439,176.66204834,176.662582397,176.085586548,177.782133812,177.859252244,176.651672363,176.666748047,168.231063843,175.399337769,176.487686157,176.477554321,176.487350464,176.476165771,176.463439941,175.652267456,176.103683472,175.39465332,175.403442383,176.376985478,178.260351114,172.50970459,173.820129395,176.692764282,177.721525891],[3.68674935020664,1.022604856062763,5.778219627512019,9.814374141563302,4.615862414686147,5.61895310780904,5.532384935310242,6.366389907341522,2.503495435880829,4.937601936160791,2.750846682222025,10,4.294200588110813,2.256616170501429,2.738682693620427,5.953527464969596,6.810063338961792,5.840629476405422,4.9244818307931,7.352699766881015,5.223582941871095,3.565017855151846,2.297797003493775,8.883070916791752,3.750746488552779,3.718273535572025,1,5.139795751764243,6.19796326207061,2.946161300976004,3.50766113477974,5.384840562891894,2.260278498284987,5.254421845579277,4.470641868355518,2.777831007725884,2.117800597686501,2.232347547675452,4.24667196236427,2.309212405584913,4.313112231070201,2.864550706191962,3.412235195482795,2.091217354820385,2.464467308804328,5.251298377076017,7.992240210807619,3.648901092669413,3.910374882757509,3.38776324432637,5.585577924471865,3.573945361227285,5.749694915972297,1.6474720119783,5.492472757982418,4.118522411238287,4.5470675670915,4.513337641560799,2.368377260881931,4.188063614086341,5.056432861122735,5.976092702642744,3.373035362359089,4.937201286011922,1.75486141824278,4.851813530769121,3.971338293758369,3.832299437566809,6.698384200747915,4.411746535506472,1.504804231793718,2.063489012465943,3.191925272107526,2.009891331429306,3.389910382017615,4.270555769271935,4.34811825923733,1.848338091224342,1.536140108071476,4.05186639759018,4.728322591693062,3.501853846526453,1.502114535826026,7.100245756235708,2.300676722853202,4.555244744424041,4.113952020487219,4.028839739972948,3.888310485301555,4.424770905203339,8.810687878995646,1.109180269643707,3.041577848982366,3.520509462003175,4.454473442576122,5.822168519325269,3.908749693257969,2.334294670528842,2.708867920986969,7.024799001260681],null,null,{"interactive":true,"className":"","stroke":false,"color":["#932667","#420A68","#DD513A","#FCA50A","#932667","#DD513A","#DD513A","#DD513A","#932667","#DD513A","#932667","#FCA50A","#932667","#932667","#932667","#DD513A","#DD513A","#DD513A","#DD513A","#DD513A","#DD513A","#932667","#932667","#FCA50A","#932667","#932667","#420A68","#DD513A","#DD513A","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#FCA50A","#932667","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#DD513A","#DD513A","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#FCA50A","#420A68","#932667","#932667","#932667","#DD513A","#932667","#932667","#932667","#DD513A"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#932667","#420A68","#DD513A","#FCA50A","#932667","#DD513A","#DD513A","#DD513A","#932667","#DD513A","#932667","#FCA50A","#932667","#932667","#932667","#DD513A","#DD513A","#DD513A","#DD513A","#DD513A","#DD513A","#932667","#932667","#FCA50A","#932667","#932667","#420A68","#DD513A","#DD513A","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#FCA50A","#932667","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#DD513A","#DD513A","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#FCA50A","#420A68","#932667","#932667","#932667","#DD513A","#932667","#932667","#932667","#DD513A"],"fillOpacity":0.5},null,null,null,null,["2025-11-03 03:58 PM <br/> Magnitude: 2.7 <br/> Depth: 25  km","2025-11-03 03:11 PM <br/> Magnitude: 2 <br/> Depth: 5  km","2025-11-02 09:44 PM <br/> Magnitude: 3.4 <br/> Depth: 33  km","2025-10-31 05:47 PM <br/> Magnitude: 4.8 <br/> Depth: 5  km","2025-10-31 05:08 PM <br/> Magnitude: 3 <br/> Depth: 5  km","2025-10-31 12:31 AM <br/> Magnitude: 3.3 <br/> Depth: 5  km","2025-10-30 10:05 PM <br/> Magnitude: 3.3 <br/> Depth: 31  km","2025-10-30 01:56 AM <br/> Magnitude: 3.6 <br/> Depth: 5  km","2025-10-29 09:38 AM <br/> Magnitude: 2.4 <br/> Depth: 12  km","2025-10-29 06:04 AM <br/> Magnitude: 3.1 <br/> Depth: 16  km","2025-10-29 03:49 AM <br/> Magnitude: 2.4 <br/> Depth: 12  km","2025-10-29 12:20 AM <br/> Magnitude: 4.9 <br/> Depth: 12  km","2025-10-28 06:13 AM <br/> Magnitude: 2.9 <br/> Depth: 5  km","2025-10-27 01:16 PM <br/> Magnitude: 2.3 <br/> Depth: 17  km","2025-10-27 10:44 AM <br/> Magnitude: 2.4 <br/> Depth: 12  km","2025-10-27 05:01 AM <br/> Magnitude: 3.4 <br/> Depth: 56  km","2025-10-27 04:33 AM <br/> Magnitude: 3.7 <br/> Depth: 22  km","2025-10-27 01:00 AM <br/> Magnitude: 3.4 <br/> Depth: 21  km","2025-10-26 08:02 PM <br/> Magnitude: 3.1 <br/> Depth: 30  km","2025-10-26 08:01 PM <br/> Magnitude: 3.9 <br/> Depth: 49  km","2025-10-26 02:05 PM <br/> Magnitude: 3.2 <br/> Depth: 25  km","2025-10-26 07:45 AM <br/> Magnitude: 2.7 <br/> Depth: 14  km","2025-10-26 06:26 AM <br/> Magnitude: 2.3 <br/> Depth: 19  km","2025-10-26 05:08 AM <br/> Magnitude: 4.5 <br/> Depth: 24  km","2025-10-25 01:08 AM <br/> Magnitude: 2.7 <br/> Depth: 2  km","2025-10-24 04:59 PM <br/> Magnitude: 2.7 <br/> Depth: 3  km","2025-10-24 03:05 PM <br/> Magnitude: 2 <br/> Depth: 5  km","2025-10-24 09:51 AM <br/> Magnitude: 3.2 <br/> Depth: 4  km","2025-10-24 06:34 AM <br/> Magnitude: 3.5 <br/> Depth: 50  km","2025-10-23 05:52 AM <br/> Magnitude: 2.5 <br/> Depth: 9  km","2025-10-21 09:52 AM <br/> Magnitude: 2.7 <br/> Depth: 12  km","2025-10-21 08:38 AM <br/> Magnitude: 3.2 <br/> Depth: 54  km","2025-10-21 03:16 AM <br/> Magnitude: 2.3 <br/> Depth: 8  km","2025-10-20 03:57 PM <br/> Magnitude: 3.2 <br/> Depth: 16  km","2025-10-20 03:28 PM <br/> Magnitude: 2.9 <br/> Depth: 18  km","2025-10-20 10:29 AM <br/> Magnitude: 2.4 <br/> Depth: 7  km","2025-10-19 04:32 PM <br/> Magnitude: 2.3 <br/> Depth: 14  km","2025-10-19 01:23 AM <br/> Magnitude: 2.3 <br/> Depth: 6  km","2025-10-18 08:27 PM <br/> Magnitude: 2.9 <br/> Depth: 28  km","2025-10-18 04:03 AM <br/> Magnitude: 2.3 <br/> Depth: 18  km","2025-10-17 09:38 PM <br/> Magnitude: 2.9 <br/> Depth: 25  km","2025-10-17 06:20 PM <br/> Magnitude: 2.5 <br/> Depth: 5  km","2025-10-17 02:27 PM <br/> Magnitude: 2.6 <br/> Depth: 6  km","2025-10-17 01:26 PM <br/> Magnitude: 2.3 <br/> Depth: 7  km","2025-10-17 05:41 AM <br/> Magnitude: 2.4 <br/> Depth: 6  km","2025-10-16 08:56 PM <br/> Magnitude: 3.2 <br/> Depth: 54  km","2025-10-16 04:12 PM <br/> Magnitude: 4.1 <br/> Depth: 5  km","2025-10-16 05:51 AM <br/> Magnitude: 2.7 <br/> Depth: 19  km","2025-10-15 06:08 PM <br/> Magnitude: 2.8 <br/> Depth: 5  km","2025-10-15 05:08 PM <br/> Magnitude: 2.6 <br/> Depth: 25  km","2025-10-15 07:20 AM <br/> Magnitude: 3.3 <br/> Depth: 43  km","2025-10-15 06:48 AM <br/> Magnitude: 2.7 <br/> Depth: 20  km","2025-10-15 04:23 AM <br/> Magnitude: 3.4 <br/> Depth: 14  km","2025-10-14 11:55 PM <br/> Magnitude: 2.1 <br/> Depth: 5  km","2025-10-13 08:15 PM <br/> Magnitude: 3.3 <br/> Depth: 5  km","2025-10-13 03:28 PM <br/> Magnitude: 2.8 <br/> Depth: 21  km","2025-10-13 09:24 AM <br/> Magnitude: 3 <br/> Depth: 15  km","2025-10-13 03:25 AM <br/> Magnitude: 3 <br/> Depth: 34  km","2025-10-12 03:52 AM <br/> Magnitude: 2.3 <br/> Depth: 4  km","2025-10-11 10:36 AM <br/> Magnitude: 2.9 <br/> Depth: 16  km","2025-10-10 11:54 PM <br/> Magnitude: 3.1 <br/> Depth: 25  km","2025-10-10 06:39 PM <br/> Magnitude: 3.4 <br/> Depth: 66  km","2025-10-10 03:06 PM <br/> Magnitude: 2.6 <br/> Depth: 26  km","2025-10-09 10:06 PM <br/> Magnitude: 3.1 <br/> Depth: 22  km","2025-10-09 11:20 AM <br/> Magnitude: 2.2 <br/> Depth: 16  km","2025-10-09 08:58 AM <br/> Magnitude: 3.1 <br/> Depth: 6  km","2025-10-08 05:27 AM <br/> Magnitude: 2.8 <br/> Depth: 26  km","2025-10-07 11:17 PM <br/> Magnitude: 2.8 <br/> Depth: 27  km","2025-10-07 10:22 PM <br/> Magnitude: 3.7 <br/> Depth: 20  km","2025-10-07 08:14 AM <br/> Magnitude: 2.9 <br/> Depth: 6  km","2025-10-07 06:07 AM <br/> Magnitude: 2.1 <br/> Depth: 12  km","2025-10-06 06:11 AM <br/> Magnitude: 2.2 <br/> Depth: 5  km","2025-10-05 11:59 PM <br/> Magnitude: 2.6 <br/> Depth: 5  km","2025-10-05 11:51 PM <br/> Magnitude: 2.2 <br/> Depth: 5  km","2025-10-05 10:00 AM <br/> Magnitude: 2.6 <br/> Depth: 25  km","2025-10-05 02:04 AM <br/> Magnitude: 2.9 <br/> Depth: 24  km","2025-10-04 06:28 PM <br/> Magnitude: 2.9 <br/> Depth: 14  km","2025-10-04 05:18 PM <br/> Magnitude: 2.2 <br/> Depth: 16  km","2025-10-04 09:08 AM <br/> Magnitude: 2.1 <br/> Depth: 6  km","2025-10-04 08:49 AM <br/> Magnitude: 2.8 <br/> Depth: 23  km","2025-10-04 06:28 AM <br/> Magnitude: 3 <br/> Depth: 25  km","2025-10-04 02:50 AM <br/> Magnitude: 2.7 <br/> Depth: 15  km","2025-10-04 02:40 AM <br/> Magnitude: 2.1 <br/> Depth: 16  km","2025-10-03 05:26 AM <br/> Magnitude: 3.8 <br/> Depth: 5  km","2025-10-02 07:14 PM <br/> Magnitude: 2.3 <br/> Depth: 12  km","2025-10-02 01:39 PM <br/> Magnitude: 3 <br/> Depth: 18  km","2025-10-02 12:09 PM <br/> Magnitude: 2.8 <br/> Depth: 17  km","2025-10-02 12:07 PM <br/> Magnitude: 2.8 <br/> Depth: 16  km","2025-10-02 12:03 PM <br/> Magnitude: 2.8 <br/> Depth: 16  km","2025-10-02 12:01 PM <br/> Magnitude: 2.9 <br/> Depth: 11  km","2025-10-02 11:15 AM <br/> Magnitude: 4.4 <br/> Depth: 134  km","2025-10-01 06:01 PM <br/> Magnitude: 2 <br/> Depth: 5  km","2025-10-01 05:38 PM <br/> Magnitude: 2.5 <br/> Depth: 14  km","2025-10-01 10:42 AM <br/> Magnitude: 2.7 <br/> Depth: 15  km","2025-09-30 04:34 PM <br/> Magnitude: 2.9 <br/> Depth: 5  km","2025-09-30 04:31 PM <br/> Magnitude: 3.4 <br/> Depth: 26  km","2025-09-30 08:45 AM <br/> Magnitude: 2.8 <br/> Depth: 4  km","2025-09-30 02:11 AM <br/> Magnitude: 2.3 <br/> Depth: 9  km","2025-09-29 01:33 AM <br/> Magnitude: 2.4 <br/> Depth: 14  km","2025-09-28 01:58 AM <br/> Magnitude: 3.8 <br/> Depth: 10  km"],{"textsize":"15px"},null]},{"method":"addLegend","args":[{"colors":["#000004","#420A68","#932667","#DD513A","#FCA50A","#FCFFA4"],"labels":["<1","1","2","3","4",">5"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"topright","type":"unknown","title":"Magnitude","extra":null,"layerId":null,"className":"info legend","group":null}]},{"method":"addTiles","args":["http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",null,null,{"minZoom":5,"maxZoom":10,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]}],"limits":{"lat":[-47.035568237,-37.562977112],"lng":[165.125152588,178.50769043]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div><div id="about-the-data" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-about-the-data">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
+<p>The original author of this dashboard is <strong>Charlotte Wickham</strong>.<br>
+The data on earthquakes is drawn from the <strong>GeoNet API</strong>: <a href="https://api.geonet.org.nz/" class="uri">https://api.geonet.org.nz/</a><br>
+All earthquakes below <strong>MMI 3.0</strong> have been filtered out.</p>
+<strong>References</strong>
+<ul>
+<li><a href="https://github.com/berkeley-stat133/demo-dashboard" class="uri">https://github.com/berkeley-stat133/demo-dashboard</a><br>
+</li>
+<li><a href="https://api.geonet.org.nz/" class="uri">https://api.geonet.org.nz/</a><br>
+</li>
+<li><a href="https://quarto.org/docs/dashboards/theming.html" class="uri">https://quarto.org/docs/dashboards/theming.html</a><br>
+</li>
+<li><a href="https://icons.getbootstrap.com/" class="uri">https://icons.getbootstrap.com/</a></li>
+<li>[Shapefiles that ESRI ArcView GIS typically uses - they give you 8+ files but only read the .shp file- it will read the rest]<a href="https://data.ca.gov/dataset/ca-geographic-boundaries" class="uri">https://data.ca.gov/dataset/ca-geographic-boundaries</a></li>
+</ul>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<strong>Dashboard Requirements</strong>
 <p>Starting from the contents of <code>demo-dashboard.qmd</code> found in the corresponding repo<br>
 (<a href="https://github.com/berkeley-stat133/demo-dashboard" class="uri">https://github.com/berkeley-stat133/demo-dashboard</a>), create a data dashboard that provides information on the most recent earthquakes to strike <strong>New Zealand</strong>.</p>
 <p>The dashboard should include:</p>
@@ -369,133 +1009,9 @@ Add a second page called <strong>“About the data”</strong> that displays the
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div>
-</div><div id="dashboard" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-dashboard">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box bg-primary showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="card-body html-fill-item html-fill-container">
-<div data-icon="clock-history" class="html-fill-item html-fill-container value-box-grid">
-<div class="value-box-showcase html-fill-item html-fill-container">
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
 
-<i class="bi bi-clock-history"></i></div>
-<div class="value-box-area">
-<p class="value-box-title">
-Number of Hours since last Earthquake
-</p>
-<p class="value-box-value">
-<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
-<pre><code>$icon
-[1] "clock-history"
-
-$color
-[1] "primary"</code></pre>
 </div>
-</p>
-</div>
-</div>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box bg-primary showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="card-body html-fill-item html-fill-container">
-<div data-icon="activity" class="html-fill-item html-fill-container value-box-grid">
-<div class="value-box-showcase html-fill-item html-fill-container">
-
-<i class="bi bi-activity"></i></div>
-<div class="value-box-area">
-<p class="value-box-title">
-Number of Earthquakes in the last 24 hours
-</p>
-<p class="value-box-value">
-<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
-<pre><code>$icon
-[1] "activity"
-
-$color
-[1] "primary"</code></pre>
-</div>
-</p>
-</div>
-</div>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div>
-</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
-<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<div class="cell-output-display html-fill-item html-fill-container">
-<div class="leaflet html-widget html-fill-item html-fill-container" id="htmlwidget-699c2fe563cf8cf748d1" style="width:100%;height:406px;"></div>
-<script type="application/json" data-for="htmlwidget-699c2fe563cf8cf748d1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addCircleMarkers","args":[[-40.984291077,-38.664100647,-39.874763489,-42.614830017,-38.484447479,-38.132694244,-38.392230988,-38.790550122,-40.238220215,-39.220573425,-40.243846893,-47.035568237,-42.879142761,-40.280292511,-40.256393433,-38.406497955,-40.403179169,-42.264122009,-40.997220944,-37.676879883,-38.927822113,-40.31823349,-39.574073792,-39.570644379,-43.889202118,-43.891521454,-43.892364502,-43.894645691,-44.815513611,-37.922542572,-39.406799316,-40.860199755,-37.874675751,-40.291099548,-40.27558136,-40.975498199,-38.44040047,-37.591854095,-39.670654297,-40.255474091,-40.657653809,-37.832349476,-37.584983826,-37.589309692,-37.593414307,-39.524246216,-37.839469663,-40.079269409,-43.588031769,-39.576496124,-38.615402222,-40.264347076,-40.567897797,-40.540232886,-40.511611938,-39.408439636,-39.332569122,-38.922897339,-38.648349762,-38.175041199,-40.960731506,-40.810321808,-39.918827057,-39.602649689,-37.626426697,-41.121986389,-39.308944702,-39.50919342,-39.903377533,-37.892249573,-40.301872253,-37.586769104,-37.730002431,-40.678420605,-37.717437744,-39.613330841,-40.29309845,-40.283168793,-38.656257629,-37.701237395,-37.623733965,-40.285617828,-40.283039093,-44.404281616,-41.327770233,-40.570831299,-40.57062149,-40.573154449,-40.575458527,-40.594295502,-38.562152863,-38.665939331,-41.332603455,-41.329185486,-40.11089385,-37.562977112,-43.598506927,-39.336303711,-40.29977417,-37.725988928],[174.696411133,176.105041504,175.541122437,171.954101562,176.848815918,176.47114563,177.142486572,177.20602069,176.694396973,175.184158325,176.702529907,165.125152588,171.598892212,176.654312134,176.665786743,176.803466797,176.075149536,173.641281128,173.972110372,177.34526062,177.206008911,176.525085449,176.901351929,176.922607422,169.088592529,169.092315674,169.088500977,169.081039429,167.55140686,178.400192261,173.652099609,175.419095026,178.382629395,176.715957642,176.693359375,175.57989502,176.594162001,175.634887695,176.796569824,176.693725586,175.2059021,178.333055648,175.63760376,175.631881714,175.640426636,177.027984619,177.891725523,174.974197388,172.647140503,176.911315918,176.916854858,176.418716431,176.458007812,176.17000394,175.04510498,177.045196533,174.683197021,177.196151733,176.086761475,178.137893677,175.066101074,173.577331543,176.487304688,176.695602417,178.310836792,175.15562439,176.969955444,176.994995117,176.514511108,177.285176658,176.711746216,175.691848755,178.333153214,175.63704539,178.50769043,176.930450439,176.66204834,176.662582397,176.085586548,177.782133812,177.859252244,176.651672363,176.666748047,168.231063843,175.399337769,176.487686157,176.477554321,176.487350464,176.476165771,176.463439941,175.652267456,176.103683472,175.39465332,175.403442383,176.376985478,178.260351114,172.50970459,173.820129395,176.692764282,177.721525891],[3.68674935020664,1.022604856062763,5.778219627512019,9.814374141563302,4.615862414686147,5.61895310780904,5.532384935310242,6.366389907341522,2.503495435880829,4.937601936160791,2.750846682222025,10,4.294200588110813,2.256616170501429,2.738682693620427,5.953527464969596,6.810063338961792,5.840629476405422,4.9244818307931,7.352699766881015,5.223582941871095,3.565017855151846,2.297797003493775,8.883070916791752,3.750746488552779,3.718273535572025,1,5.139795751764243,6.19796326207061,2.946161300976004,3.50766113477974,5.384840562891894,2.260278498284987,5.254421845579277,4.470641868355518,2.777831007725884,2.117800597686501,2.232347547675452,4.24667196236427,2.309212405584913,4.313112231070201,2.864550706191962,3.412235195482795,2.091217354820385,2.464467308804328,5.251298377076017,7.992240210807619,3.648901092669413,3.910374882757509,3.38776324432637,5.585577924471865,3.573945361227285,5.749694915972297,1.6474720119783,5.492472757982418,4.118522411238287,4.5470675670915,4.513337641560799,2.368377260881931,4.188063614086341,5.056432861122735,5.976092702642744,3.373035362359089,4.937201286011922,1.75486141824278,4.851813530769121,3.971338293758369,3.832299437566809,6.698384200747915,4.411746535506472,1.504804231793718,2.063489012465943,3.191925272107526,2.009891331429306,3.389910382017615,4.270555769271935,4.34811825923733,1.848338091224342,1.536140108071476,4.05186639759018,4.728322591693062,3.501853846526453,1.502114535826026,7.100245756235708,2.300676722853202,4.555244744424041,4.113952020487219,4.028839739972948,3.888310485301555,4.424770905203339,8.810687878995646,1.109180269643707,3.041577848982366,3.520509462003175,4.454473442576122,5.822168519325269,3.908749693257969,2.334294670528842,2.708867920986969,7.024799001260681],null,null,{"interactive":true,"className":"","stroke":false,"color":["#932667","#420A68","#DD513A","#FCA50A","#932667","#DD513A","#DD513A","#DD513A","#932667","#DD513A","#932667","#FCA50A","#932667","#932667","#932667","#DD513A","#DD513A","#DD513A","#DD513A","#DD513A","#DD513A","#932667","#932667","#FCA50A","#932667","#932667","#420A68","#DD513A","#DD513A","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#FCA50A","#932667","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#DD513A","#DD513A","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#FCA50A","#420A68","#932667","#932667","#932667","#DD513A","#932667","#932667","#932667","#DD513A"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#932667","#420A68","#DD513A","#FCA50A","#932667","#DD513A","#DD513A","#DD513A","#932667","#DD513A","#932667","#FCA50A","#932667","#932667","#932667","#DD513A","#DD513A","#DD513A","#DD513A","#DD513A","#DD513A","#932667","#932667","#FCA50A","#932667","#932667","#420A68","#DD513A","#DD513A","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#FCA50A","#932667","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#DD513A","#DD513A","#932667","#DD513A","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#932667","#FCA50A","#420A68","#932667","#932667","#932667","#DD513A","#932667","#932667","#932667","#DD513A"],"fillOpacity":0.5},null,null,null,null,["2025-11-03 03:58 PM <br/> Magnitude: 2.7 <br/> Depth: 25  km","2025-11-03 03:11 PM <br/> Magnitude: 2 <br/> Depth: 5  km","2025-11-02 09:44 PM <br/> Magnitude: 3.4 <br/> Depth: 33  km","2025-10-31 05:47 PM <br/> Magnitude: 4.8 <br/> Depth: 5  km","2025-10-31 05:08 PM <br/> Magnitude: 3 <br/> Depth: 5  km","2025-10-31 12:31 AM <br/> Magnitude: 3.3 <br/> Depth: 5  km","2025-10-30 10:05 PM <br/> Magnitude: 3.3 <br/> Depth: 31  km","2025-10-30 01:56 AM <br/> Magnitude: 3.6 <br/> Depth: 5  km","2025-10-29 09:38 AM <br/> Magnitude: 2.4 <br/> Depth: 12  km","2025-10-29 06:04 AM <br/> Magnitude: 3.1 <br/> Depth: 16  km","2025-10-29 03:49 AM <br/> Magnitude: 2.4 <br/> Depth: 12  km","2025-10-29 12:20 AM <br/> Magnitude: 4.9 <br/> Depth: 12  km","2025-10-28 06:13 AM <br/> Magnitude: 2.9 <br/> Depth: 5  km","2025-10-27 01:16 PM <br/> Magnitude: 2.3 <br/> Depth: 17  km","2025-10-27 10:44 AM <br/> Magnitude: 2.4 <br/> Depth: 12  km","2025-10-27 05:01 AM <br/> Magnitude: 3.4 <br/> Depth: 56  km","2025-10-27 04:33 AM <br/> Magnitude: 3.7 <br/> Depth: 22  km","2025-10-27 01:00 AM <br/> Magnitude: 3.4 <br/> Depth: 21  km","2025-10-26 08:02 PM <br/> Magnitude: 3.1 <br/> Depth: 30  km","2025-10-26 08:01 PM <br/> Magnitude: 3.9 <br/> Depth: 49  km","2025-10-26 02:05 PM <br/> Magnitude: 3.2 <br/> Depth: 25  km","2025-10-26 07:45 AM <br/> Magnitude: 2.7 <br/> Depth: 14  km","2025-10-26 06:26 AM <br/> Magnitude: 2.3 <br/> Depth: 19  km","2025-10-26 05:08 AM <br/> Magnitude: 4.5 <br/> Depth: 24  km","2025-10-25 01:08 AM <br/> Magnitude: 2.7 <br/> Depth: 2  km","2025-10-24 04:59 PM <br/> Magnitude: 2.7 <br/> Depth: 3  km","2025-10-24 03:05 PM <br/> Magnitude: 2 <br/> Depth: 5  km","2025-10-24 09:51 AM <br/> Magnitude: 3.2 <br/> Depth: 4  km","2025-10-24 06:34 AM <br/> Magnitude: 3.5 <br/> Depth: 50  km","2025-10-23 05:52 AM <br/> Magnitude: 2.5 <br/> Depth: 9  km","2025-10-21 09:52 AM <br/> Magnitude: 2.7 <br/> Depth: 12  km","2025-10-21 08:38 AM <br/> Magnitude: 3.2 <br/> Depth: 54  km","2025-10-21 03:16 AM <br/> Magnitude: 2.3 <br/> Depth: 8  km","2025-10-20 03:57 PM <br/> Magnitude: 3.2 <br/> Depth: 16  km","2025-10-20 03:28 PM <br/> Magnitude: 2.9 <br/> Depth: 18  km","2025-10-20 10:29 AM <br/> Magnitude: 2.4 <br/> Depth: 7  km","2025-10-19 04:32 PM <br/> Magnitude: 2.3 <br/> Depth: 14  km","2025-10-19 01:23 AM <br/> Magnitude: 2.3 <br/> Depth: 6  km","2025-10-18 08:27 PM <br/> Magnitude: 2.9 <br/> Depth: 28  km","2025-10-18 04:03 AM <br/> Magnitude: 2.3 <br/> Depth: 18  km","2025-10-17 09:38 PM <br/> Magnitude: 2.9 <br/> Depth: 25  km","2025-10-17 06:20 PM <br/> Magnitude: 2.5 <br/> Depth: 5  km","2025-10-17 02:27 PM <br/> Magnitude: 2.6 <br/> Depth: 6  km","2025-10-17 01:26 PM <br/> Magnitude: 2.3 <br/> Depth: 7  km","2025-10-17 05:41 AM <br/> Magnitude: 2.4 <br/> Depth: 6  km","2025-10-16 08:56 PM <br/> Magnitude: 3.2 <br/> Depth: 54  km","2025-10-16 04:12 PM <br/> Magnitude: 4.1 <br/> Depth: 5  km","2025-10-16 05:51 AM <br/> Magnitude: 2.7 <br/> Depth: 19  km","2025-10-15 06:08 PM <br/> Magnitude: 2.8 <br/> Depth: 5  km","2025-10-15 05:08 PM <br/> Magnitude: 2.6 <br/> Depth: 25  km","2025-10-15 07:20 AM <br/> Magnitude: 3.3 <br/> Depth: 43  km","2025-10-15 06:48 AM <br/> Magnitude: 2.7 <br/> Depth: 20  km","2025-10-15 04:23 AM <br/> Magnitude: 3.4 <br/> Depth: 14  km","2025-10-14 11:55 PM <br/> Magnitude: 2.1 <br/> Depth: 5  km","2025-10-13 08:15 PM <br/> Magnitude: 3.3 <br/> Depth: 5  km","2025-10-13 03:28 PM <br/> Magnitude: 2.8 <br/> Depth: 21  km","2025-10-13 09:24 AM <br/> Magnitude: 3 <br/> Depth: 15  km","2025-10-13 03:25 AM <br/> Magnitude: 3 <br/> Depth: 34  km","2025-10-12 03:52 AM <br/> Magnitude: 2.3 <br/> Depth: 4  km","2025-10-11 10:36 AM <br/> Magnitude: 2.9 <br/> Depth: 16  km","2025-10-10 11:54 PM <br/> Magnitude: 3.1 <br/> Depth: 25  km","2025-10-10 06:39 PM <br/> Magnitude: 3.4 <br/> Depth: 66  km","2025-10-10 03:06 PM <br/> Magnitude: 2.6 <br/> Depth: 26  km","2025-10-09 10:06 PM <br/> Magnitude: 3.1 <br/> Depth: 22  km","2025-10-09 11:20 AM <br/> Magnitude: 2.2 <br/> Depth: 16  km","2025-10-09 08:58 AM <br/> Magnitude: 3.1 <br/> Depth: 6  km","2025-10-08 05:27 AM <br/> Magnitude: 2.8 <br/> Depth: 26  km","2025-10-07 11:17 PM <br/> Magnitude: 2.8 <br/> Depth: 27  km","2025-10-07 10:22 PM <br/> Magnitude: 3.7 <br/> Depth: 20  km","2025-10-07 08:14 AM <br/> Magnitude: 2.9 <br/> Depth: 6  km","2025-10-07 06:07 AM <br/> Magnitude: 2.1 <br/> Depth: 12  km","2025-10-06 06:11 AM <br/> Magnitude: 2.2 <br/> Depth: 5  km","2025-10-05 11:59 PM <br/> Magnitude: 2.6 <br/> Depth: 5  km","2025-10-05 11:51 PM <br/> Magnitude: 2.2 <br/> Depth: 5  km","2025-10-05 10:00 AM <br/> Magnitude: 2.6 <br/> Depth: 25  km","2025-10-05 02:04 AM <br/> Magnitude: 2.9 <br/> Depth: 24  km","2025-10-04 06:28 PM <br/> Magnitude: 2.9 <br/> Depth: 14  km","2025-10-04 05:18 PM <br/> Magnitude: 2.2 <br/> Depth: 16  km","2025-10-04 09:08 AM <br/> Magnitude: 2.1 <br/> Depth: 6  km","2025-10-04 08:49 AM <br/> Magnitude: 2.8 <br/> Depth: 23  km","2025-10-04 06:28 AM <br/> Magnitude: 3 <br/> Depth: 25  km","2025-10-04 02:50 AM <br/> Magnitude: 2.7 <br/> Depth: 15  km","2025-10-04 02:40 AM <br/> Magnitude: 2.1 <br/> Depth: 16  km","2025-10-03 05:26 AM <br/> Magnitude: 3.8 <br/> Depth: 5  km","2025-10-02 07:14 PM <br/> Magnitude: 2.3 <br/> Depth: 12  km","2025-10-02 01:39 PM <br/> Magnitude: 3 <br/> Depth: 18  km","2025-10-02 12:09 PM <br/> Magnitude: 2.8 <br/> Depth: 17  km","2025-10-02 12:07 PM <br/> Magnitude: 2.8 <br/> Depth: 16  km","2025-10-02 12:03 PM <br/> Magnitude: 2.8 <br/> Depth: 16  km","2025-10-02 12:01 PM <br/> Magnitude: 2.9 <br/> Depth: 11  km","2025-10-02 11:15 AM <br/> Magnitude: 4.4 <br/> Depth: 134  km","2025-10-01 06:01 PM <br/> Magnitude: 2 <br/> Depth: 5  km","2025-10-01 05:38 PM <br/> Magnitude: 2.5 <br/> Depth: 14  km","2025-10-01 10:42 AM <br/> Magnitude: 2.7 <br/> Depth: 15  km","2025-09-30 04:34 PM <br/> Magnitude: 2.9 <br/> Depth: 5  km","2025-09-30 04:31 PM <br/> Magnitude: 3.4 <br/> Depth: 26  km","2025-09-30 08:45 AM <br/> Magnitude: 2.8 <br/> Depth: 4  km","2025-09-30 02:11 AM <br/> Magnitude: 2.3 <br/> Depth: 9  km","2025-09-29 01:33 AM <br/> Magnitude: 2.4 <br/> Depth: 14  km","2025-09-28 01:58 AM <br/> Magnitude: 3.8 <br/> Depth: 10  km"],{"textsize":"15px"},null]},{"method":"addLegend","args":[{"colors":["#000004","#420A68","#932667","#DD513A","#FCA50A","#FCFFA4"],"labels":["<1","1","2","3","4",">5"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"topright","type":"unknown","title":"Magnitude","extra":null,"layerId":null,"className":"info legend","group":null}]},{"method":"addTiles","args":["http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",null,null,{"minZoom":5,"maxZoom":10,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]}],"limits":{"lat":[-47.035568237,-37.562977112],"lng":[165.125152588,178.50769043]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<ol start="3" type="1">
-<li><strong>A layout in two columns.</strong></li>
-<li><p>The <strong>map of New Zealand</strong> taking up the full right column.</p></li>
-<li><p>The <strong>left column</strong> should have two rows:</p>
-<ul>
-<li>The <strong>top row</strong> has <strong>value boxes</strong> for:
-<ul>
-<li>the <strong>number of hours since the last earthquake</strong>, and<br>
-</li>
-<li>the <strong>number of earthquakes in the last 24 hours</strong>.<br>
-Select a suitable <strong>icon</strong> for each. &gt; Quarto dashboards can use any of the icons in the Bootstrap collection.<br>
-&gt; Search for an icon and use the corresponding name as a string:<br>
-&gt; <a href="https://icons.getbootstrap.com/" class="uri">https://icons.getbootstrap.com/</a>.</li>
-</ul></li>
-<li>The <strong>bottom row</strong> should hold the <strong>table of the top n earthquakes</strong>.</li>
-</ul></li>
-<li><p>All of the above should appear on a page called <strong>“Dashboard.”</strong><br>
-Add a second page called <strong>“About the data”</strong> that displays the following text:</p>
-<blockquote class="blockquote">
-<p>The original author of this dashboard is <strong>Charlotte Wickham</strong>.</p>
-<p>The data on earthquakes is drawn from the <strong>GeoNet API</strong>:<br>
-<a href="https://api.geonet.org.nz/" class="uri">https://api.geonet.org.nz/</a></p>
-<p>All earthquakes below <strong>MMI 3.0</strong> have been filtered out.</p>
-</blockquote></li>
-</ol>
-<hr>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div>
-</div>
-</div><div id="references" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-references">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<ul>
-<li><a href="https://github.com/berkeley-stat133/demo-dashboard" class="uri">https://github.com/berkeley-stat133/demo-dashboard</a><br>
-</li>
-<li><a href="https://api.geonet.org.nz/" class="uri">https://api.geonet.org.nz/</a><br>
-</li>
-<li><a href="https://quarto.org/docs/dashboards/theming.html" class="uri">https://quarto.org/docs/dashboards/theming.html</a><br>
-</li>
-<li><a href="https://icons.getbootstrap.com/" class="uri">https://icons.getbootstrap.com/</a></li>
-<li>[Shapefiles that ESRI ArcView GIS typically uses - they give you 8+ files but only read the .shp file- it will read the rest]<a href="https://data.ca.gov/dataset/ca-geographic-boundaries" class="uri">https://data.ca.gov/dataset/ca-geographic-boundaries</a></li>
-</ul>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
-
 </div>
 </div>
 </div>

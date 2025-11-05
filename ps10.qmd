@@ -3,12 +3,17 @@ title: "Problem Set 10"
 format: 
     dashboard:
         orientation: columns
-        nav-buttons: [linkedin, github, twitter]
+        nav-buttons: 
+            - icon: github
+              href: https://github.com/caldavidlee/STAT133-PS10
+            - icon: linkedin
+              href: https://www.linkedin.com/in/davidthelee/
+            - icon: twitter
+              href: http://x.com/divarnold/
         logo: stat133_logo-main.png
 author: David Lee
 theme: minty
 ---
-
 
 # PS 10 — Gerrymandering
 
@@ -196,40 +201,7 @@ Why are they different from one another?
 ```
 ---
 
-# Dashboard Requirements
 
-Starting from the contents of `demo-dashboard.qmd` found in the corresponding repo  
-(<https://github.com/berkeley-stat133/demo-dashboard>), create a data dashboard that provides information on the most recent earthquakes to strike **New Zealand**.
-
-The dashboard should include:
-
-1. **Your name** added as the author.  
-2. **A theme** of your choosing.  
-   > Dashboards collect the colors and fonts into themes similar to ggplot2.  
-   > You can find the list of themes here:  
-   > <https://quarto.org/docs/dashboards/theming.html>.
-3. **A layout in two columns.**
-4. The **map of New Zealand** taking up the full right column.
-5. The **left column** should have two rows:
-   - The **top row** has **value boxes** for:
-     - the **number of hours since the last earthquake**, and  
-     - the **number of earthquakes in the last 24 hours**.  
-       Select a suitable **icon** for each.
-       > Quarto dashboards can use any of the icons in the Bootstrap collection.  
-       > Search for an icon and use the corresponding name as a string:  
-       > <https://icons.getbootstrap.com/>.
-   - The **bottom row** should hold the **table of the top n earthquakes**.
-6. All of the above should appear on a page called **“Dashboard.”**  
-   Add a second page called **“About the data”** that displays the following text:
-
-   > The original author of this dashboard is **Charlotte Wickham**.  
-   >  
-   > The data on earthquakes is drawn from the **GeoNet API**:  
-   > <https://api.geonet.org.nz/>  
-   >  
-   > All earthquakes below **MMI 3.0** have been filtered out.
-
-Since it is quite lengthy, there is **no need to copy the code** used in your dashboard into this problem set.
 ```{r}
 #install.packages(c("gt", "httr2", "shiny"))
 
@@ -355,26 +327,63 @@ top_n_table <- top_n |>
 
 ## Column 1 {height = 50%}
 
-####
+### 
 ```{r}
 #| component: valuebox
 #| title: Number of Hours since last Earthquake
-#| echo: false
-list(icon = "clock-history", color = "primary")
+list(icon = "clock-history", color = "primary", value = as.numeric(hours_last))
 
 ```
 
 ```{r}
 #| component: valuebox
 #| title: Number of Earthquakes in the last 24 hours
-list( icon = "activity", color = "primary")
+list( icon = "activity", color = "primary", value = n_24)
 ```
 
-## Column 2 {height = 50%}
+### Sub-Column
+```{r}
+#| title: Top 10 Earthquakes
+#| component: table
+#| echo: false
+top_n_table
+
+
+
+```
+
+## Column 2 {height = 100%}
 ```{r}
 quake_map
 ```
 
+
+# About the Data
+The original author of this dashboard is **Charlotte Wickham**.  
+The data on earthquakes is drawn from the **GeoNet API**: <https://api.geonet.org.nz/>  
+All earthquakes below **MMI 3.0** have been filtered out.
+
+**References**
+
+- <https://github.com/berkeley-stat133/demo-dashboard>  
+- <https://api.geonet.org.nz/>  
+- <https://quarto.org/docs/dashboards/theming.html>  
+- <https://icons.getbootstrap.com/>
+- [Shapefiles that ESRI ArcView GIS typically uses - they give you 8+ files but only read the .shp file- it will read the rest]<https://data.ca.gov/dataset/ca-geographic-boundaries>
+
+### 
+**Dashboard Requirements**
+
+Starting from the contents of `demo-dashboard.qmd` found in the corresponding repo  
+(<https://github.com/berkeley-stat133/demo-dashboard>), create a data dashboard that provides information on the most recent earthquakes to strike **New Zealand**.
+
+The dashboard should include:
+
+1. **Your name** added as the author.  
+2. **A theme** of your choosing.  
+   > Dashboards collect the colors and fonts into themes similar to ggplot2.  
+   > You can find the list of themes here:  
+   > <https://quarto.org/docs/dashboards/theming.html>.
 3. **A layout in two columns.**
 4. The **map of New Zealand** taking up the full right column.
 5. The **left column** should have two rows:
@@ -396,13 +405,4 @@ quake_map
    >  
    > All earthquakes below **MMI 3.0** have been filtered out.
 
-
----
-
-# References
-
-- <https://github.com/berkeley-stat133/demo-dashboard>  
-- <https://api.geonet.org.nz/>  
-- <https://quarto.org/docs/dashboards/theming.html>  
-- <https://icons.getbootstrap.com/>
-- [Shapefiles that ESRI ArcView GIS typically uses - they give you 8+ files but only read the .shp file- it will read the rest]<https://data.ca.gov/dataset/ca-geographic-boundaries>
+Since it is quite lengthy, there is **no need to copy the code** used in your dashboard into this problem set.
